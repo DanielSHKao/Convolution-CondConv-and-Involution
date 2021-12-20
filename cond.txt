@@ -1,0 +1,322 @@
+rank_zero_deprecation(
+/home/daniel/miniconda3/lib/python3.9/site-packages/pytorch_lightning/core/datams` was deprecated in v1.5 and will be removed in v1.7.
+  rank_zero_deprecation(
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_sta
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode
+  (layer1): Sequential(
+    (0): BasicBlock_cond(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1),
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running
+      (relu): ReLU(inplace=True)
+      (router): route_func(
+        (avgpool): AdaptiveAvgPool2d(output_size=1)
+        (fc): Linear(in_features=64, out_features=4, bias=True)
+        (sigmoid): Sigmoid()
+      )
+      (conv2): CondConv2d()
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running
+    )
+    (1): BasicBlock_cond(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1),
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running
+      (relu): ReLU(inplace=True)
+      (router): route_func(
+        (avgpool): AdaptiveAvgPool2d(output_size=1)
+        (fc): Linear(in_features=64, out_features=4, bias=True)
+        (sigmoid): Sigmoid()
+      )
+      (conv2): CondConv2d()
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock_cond(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (relu): ReLU(inplace=True)
+      (router): route_func(
+        (avgpool): AdaptiveAvgPool2d(output_size=1)
+        (fc): Linear(in_features=128, out_features=4, bias=True)
+        (sigmoid): Sigmoid()
+      )
+      (conv2): CondConv2d()
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      )
+    )
+    (1): BasicBlock_cond(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (relu): ReLU(inplace=True)
+      (router): route_func(
+        (avgpool): AdaptiveAvgPool2d(output_size=1)
+        (fc): Linear(in_features=128, out_features=4, bias=True)
+        (sigmoid): Sigmoid()
+      )
+      (conv2): CondConv2d()
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_runnin
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock_cond(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (relu): ReLU(inplace=True)
+      (router): route_func(
+        (avgpool): AdaptiveAvgPool2d(output_size=1)
+        (fc): Linear(in_features=256, out_features=4, bias=True)
+        (sigmoid): Sigmoid()
+      )
+      (conv2): CondConv2d()
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      )
+    )
+    (1): BasicBlock_cond(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (relu): ReLU(inplace=True)
+      (router): route_func(
+        (avgpool): AdaptiveAvgPool2d(output_size=1)
+        (fc): Linear(in_features=256, out_features=4, bias=True)
+        (sigmoid): Sigmoid()
+      )
+      (conv2): CondConv2d()
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_runnin
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock_cond(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (relu): ReLU(inplace=True)
+      (router): route_func(
+        (avgpool): AdaptiveAvgPool2d(output_size=1)
+        (fc): Linear(in_features=512, out_features=4, bias=True)
+        (sigmoid): Sigmoid()
+      )
+      (conv2): CondConv2d()
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      )
+    )
+    (1): BasicBlock_cond(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_runnin
+      (relu): ReLU(inplace=True)
+      (router): route_func(
+        (avgpool): AdaptiveAvgPool2d(output_size=1)
+        (fc): Linear(in_features=512, out_features=4, bias=True)
+        (sigmoid): Sigmoid()
+      )
+      (conv2): CondConv2d()
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_runnin
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=10, bias=True)
+)
+/home/daniel/miniconda3/lib/python3.9/site-packages/pytorch_lightning/trainer/coner(progress_bar_refresh_rate=10)` is deprecated in v1.5 and will be removed in  `refresh_rate` directly to the Trainer's `callbacks` argument instead. Or, to d
+  rank_zero_deprecation(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+Files already downloaded and verified
+Files already downloaded and verified
+/home/daniel/miniconda3/lib/python3.9/site-packages/pytorch_lightning/core/datamrms` was deprecated in v1.5 and will be removed in v1.7.
+  rank_zero_deprecation(
+/home/daniel/miniconda3/lib/python3.9/site-packages/pytorch_lightning/core/datams` was deprecated in v1.5 and will be removed in v1.7.
+  rank_zero_deprecation(
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 30.0 M
+---------------------------------
+30.0 M    Trainable params
+0         Non-trainable params
+30.0 M    Total params
+119.929   Total estimated model params size (MB)
+Global seed set to 7
+Epoch 29: 100%|████████████████████████████████████████████████████████| 782/782
+FIT Profiler Report
+
+Action                                  |  Mean duration (s)    |Num calls
+--------------------------------------------------------------------------------
+Total                                   |  -                    |_
+--------------------------------------------------------------------------------
+run_training_epoch                      |  74.53                |30
+run_training_batch                      |  0.11038              |18750
+optimizer_step_with_closure_0           |  0.038305             |18750
+training_step_and_backward              |  0.034225             |18750
+backward                                |  0.026914             |18750
+model_forward                           |  0.00679              |18750
+training_step                           |  0.0066951            |18750
+evaluation_step_and_end                 |  0.024277             |4712
+validation_step                         |  0.024243             |4712
+on_train_epoch_end                      |  0.46049              |30
+zero_grad                               |  0.00050425           |18750
+get_train_batch                         |  0.00021458           |18780
+fetch_next_train_batch                  |  0.0002046            |18780
+training_batch_to_device                |  0.00017392           |18750
+on_train_batch_end                      |  0.00016787           |18750
+get_validate_batch                      |  0.00061807           |4740
+fetch_next_validate_batch               |  0.0006086            |4740
+on_train_batch_start                    |  0.00010593           |18750
+evaluation_batch_to_device              |  0.0001625            |4712
+on_after_backward                       |  1.6953e-05           |18750
+on_batch_start                          |  1.1882e-05           |18750
+on_validation_batch_end                 |  4.4277e-05           |4712
+on_before_optimizer_step                |  1.0511e-05           |18750
+on_batch_end                            |  9.3151e-06           |18750
+on_before_zero_grad                     |  8.5725e-06           |18750
+on_before_backward                      |  7.99e-06             |18750
+training_step_end                       |  3.9836e-06           |18750
+on_validation_batch_start               |  8.2002e-06           |4712
+on_validation_end                       |  0.00062136           |31
+validation_step_end                     |  3.6092e-06           |4712
+on_validation_start                     |  0.00043868           |31
+on_validation_epoch_end                 |  0.00037879           |31
+get_sanity_check_batch                  |  0.0036423            |3
+fetch_next_sanity_check_batch           |  0.0036212            |3
+on_train_epoch_start                    |  0.00032394           |30
+on_validation_model_eval                |  0.00024045           |31
+on_train_start                          |  0.0058636            |1
+on_pretrain_routine_start               |  0.0019651            |1
+on_sanity_check_start                   |  0.00089661           |1
+on_epoch_end                            |  1.337e-05            |61
+on_epoch_start                          |  9.8582e-06           |61
+configure_optimizers                    |  0.00036806           |1
+on_train_end                            |  0.00024918           |1
+on_validation_epoch_start               |  7.912e-06            |31
+on_fit_end                              |  3.93e-05             |1
+teardown                                |  3.244e-05            |1
+on_sanity_check_end                     |  2.2831e-05           |1
+setup                                   |  2.1678e-05           |1
+on_before_accelerator_backend_setup     |  1.9354e-05           |1
+on_fit_start                            |  1.5278e-05           |1
+on_configure_sharded_model              |  1.4598e-05           |1
+on_pretrain_routine_end                 |  1.0274e-05           |1
+prepare_data                            |  9.9619e-06           |1
+on_train_dataloader                     |  6.5798e-06           |1
+configure_callbacks                     |  5.336e-06            |1
+configure_sharded_model                 |  4.8061e-06           |1
+on_val_dataloader                       |  3.5181e-06           |1
+
+/home/daniel/miniconda3/lib/python3.9/site-packages/pytorch_lightning/core/datamms` was deprecated in v1.5 and will be removed in v1.7.
+  rank_zero_deprecation(
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+Testing: 100%|██████████████████████████████████████████████████████████████████--------------------------------------------------------------------------------
+DATALOADER:0 TEST RESULTS
+{'test_acc': 0.911899983882904, 'test_loss': 0.2735016644001007}
+--------------------------------------------------------------------------------
+Testing: 100%|██████████████████████████████████████████████████████████████████
+TEST Profiler Report
+
+Action                                  |  Mean duration (s)    |Num calls
+--------------------------------------------------------------------------------
+Total                                   |  -                    |_
+--------------------------------------------------------------------------------
+run_training_epoch                      |  74.53                |30
+run_training_batch                      |  0.11038              |18750
+optimizer_step_with_closure_0           |  0.038305             |18750
+training_step_and_backward              |  0.034225             |18750
+backward                                |  0.026914             |18750
+model_forward                           |  0.00679              |18750
+training_step                           |  0.0066951            |18750
+evaluation_step_and_end                 |  0.024273             |4869
+validation_step                         |  0.024243             |4712
+on_train_epoch_end                      |  0.46049              |30
+zero_grad                               |  0.00050425           |18750
+run_test_evaluation                     |  4.2029               |1
+get_train_batch                         |  0.00021458           |18780
+fetch_next_train_batch                  |  0.0002046            |18780
+test_step                               |  0.024115             |157
+training_batch_to_device                |  0.00017392           |18750
+on_train_batch_end                      |  0.00016787           |18750
+get_validate_batch                      |  0.00061807           |4740
+fetch_next_validate_batch               |  0.0006086            |4740
+on_train_batch_start                    |  0.00010593           |18750
+evaluation_batch_to_device              |  0.00016214           |4869
+on_after_backward                       |  1.6953e-05           |18750
+on_batch_start                          |  1.1882e-05           |18750
+on_validation_batch_end                 |  4.4277e-05           |4712
+on_before_optimizer_step                |  1.0511e-05           |18750
+on_batch_end                            |  9.3151e-06           |18750
+on_before_zero_grad                     |  8.5725e-06           |18750
+on_before_backward                      |  7.99e-06             |18750
+get_test_batch                          |  0.00067554           |158
+fetch_next_test_batch                   |  0.0006659            |158
+training_step_end                       |  3.9836e-06           |18750
+on_validation_batch_start               |  8.2002e-06           |4712
+on_validation_end                       |  0.00062136           |31
+validation_step_end                     |  3.6092e-06           |4712
+on_validation_start                     |  0.00043868           |31
+on_validation_epoch_end                 |  0.00037879           |31
+get_sanity_check_batch                  |  0.0036423            |3
+fetch_next_sanity_check_batch           |  0.0036212            |3
+on_train_epoch_start                    |  0.00032394           |30
+on_validation_model_eval                |  0.00024045           |31
+on_train_start                          |  0.0058636            |1
+on_test_batch_end                       |  3.1425e-05           |157
+on_pretrain_routine_start               |  0.0019651            |1
+on_test_batch_start                     |  9.0063e-06           |157
+on_sanity_check_start                   |  0.00089661           |1
+on_epoch_end                            |  1.3451e-05           |62
+test_step_end                           |  3.9279e-06           |157
+on_epoch_start                          |  9.8326e-06           |62
+configure_optimizers                    |  0.00036806           |1
+on_test_epoch_end                       |  0.000362             |1
+on_test_end                             |  0.00030084           |1
+on_train_end                            |  0.00024918           |1
+on_validation_epoch_start               |  7.912e-06            |31
+on_test_model_eval                      |  0.00022018           |1
+on_test_start                           |  0.00020891           |1
+teardown                                |  2.4262e-05           |2
+setup                                   |  2.0652e-05           |2
+on_fit_end                              |  3.93e-05             |1
+on_before_accelerator_backend_setup     |  1.6361e-05           |2
+on_configure_sharded_model              |  1.485e-05            |2
+on_sanity_check_end                     |  2.2831e-05           |1
+on_fit_start                            |  1.5278e-05           |1
+prepare_data                            |  6.7265e-06           |2
+configure_callbacks                     |  5.634e-06            |2
+on_pretrain_routine_end                 |  1.0274e-05           |1
+configure_sharded_model                 |  4.8811e-06           |2
+on_test_epoch_start                     |  7.6829e-06           |1
+on_train_dataloader                     |  6.5798e-06           |1
+on_test_dataloader                      |  5.506e-06            |1
+on_val_dataloader                       |  3.5181e-06           |1
+
+(base) daniel@mtrec-System-Product-Name:~/codes$ ^C
+(base) daniel@mtrec-System-Product-Name:~/codes$ GPU available: True, used: True
+Action                                  |  Mean duration (s)    |Num calls
+--------------------------------------------------------------------------------
+Total                                   |  -                    |_
+--------------------------------------------------------------------------------
+run_training_epoch                      |  74.53                |30
+run_training_batch                      |  0.11038              |18750
+optimizer_step_with_closure_0           |  0.038305             |18750
+training_step_and_backward              |  0.034225             |18750
+backward                                |  0.026914             |18750
+model_forward                           |  0.00679              |18750
+training_step                           |  0.0066951            |18750
+evaluation_step_and_end                 |  0.024277             |4712
+validation_step                         |  0.024243             |4712
+on_train_epoch_end                      |  0.46049              |30
+zero_grad                               |  0.00050425           |18750
+get_train_batch                         |  0.00021458           |18780
+fetch_next_train_batch                  |  0.0002046            |18780
+training_batch_to_device                |  0.00017392           |18750
+on_train_batch_end                      |  0.00016787           |18750
+get_validate_batch                      |  0.00061807           |4740
+fetch_next_validate_batch               |  0.0006086            |4740

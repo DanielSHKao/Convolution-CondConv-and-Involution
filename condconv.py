@@ -7,6 +7,7 @@ import math
 class route_func(nn.Module):
     r"""CondConv: Conditionally Parameterized Convolutions for Efficient Inference
     https://papers.nips.cc/paper/8412-condconv-conditionally-parameterized-convolutions-for-efficient-inference.pdf
+
     Args:
         c_in (int): Number of channels in the input image
         num_experts (int): Number of experts for mixture. Default: 1
@@ -29,6 +30,7 @@ class route_func(nn.Module):
 class CondConv2d(nn.Module):
     r"""CondConv: Conditionally Parameterized Convolutions for Efficient Inference
     https://papers.nips.cc/paper/8412-condconv-conditionally-parameterized-convolutions-for-efficient-inference.pdf
+
     Args:
         in_channels (int): Number of channels in the input image
         out_channels (int): Number of channels produced by the convolution
@@ -39,6 +41,7 @@ class CondConv2d(nn.Module):
         groups (int, optional): Number of blocked connections from input channels to output channels. Default: 1
         bias (bool, optional): If ``True``, adds a learnable bias to the output. Default: ``True``
         num_experts (int): Number of experts for mixture. Default: 1
+
     """
 
     def __init__(self, in_channels, out_channels, kernel_size,
